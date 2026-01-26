@@ -17,3 +17,6 @@
     function changeText(){
         document.getElementById("p1").innerHTML = "You clicked the paragraph!";
     }
+
+
+    document.getElementById("text").innerHTML = "text chnaged";
