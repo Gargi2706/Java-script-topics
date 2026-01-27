@@ -2,6 +2,25 @@ function funNAME(){
  body
  } // Function Declaration
  
+
+// can call one function from other function, events or from any code block
+function sayHelloo(){
+   return " helloo";
+};
+function sayHello(){
+   document.getElementById("hello").innerHTML=sayHelloo();
+}
+sayHello();
+
+
+
+function sum(a, b){
+   return a+b;
+}
+sum(1,2);
+sum(4,5); // 3 , 9 : we can call the same function whenever we need
+
+
  const funNAME = function(){
     body
  } // Function Expression
@@ -69,8 +88,8 @@ hello();
  let hello=()=>{
     document.getElementById("demo3").innerHTML= " this is" + this
  }
-window.addEventListener("load" , hello);
-document.getElementById("btn").addEventListener("click" , hello);
+window.addEventListener("load" , hello());
+document.getElementById("btn").addEventListener("click" , hello());
 
 
 
