@@ -42,7 +42,7 @@ const person1={ //this in a method
         return this.firstName + " " + this.lastName;
      }
 };
-document.write(person.fullName());
+document.write(person1.fullName());
 
 
 //call method
@@ -101,3 +101,14 @@ const {
 } = response;
 
 console.log(user, token);
+
+
+//object iteration
+const useer = {
+  name: "dnfn",
+  age: 21,
+  city: "Ahmedabad"
+};
+for (let key in useer) {
+  console.log(key, useer[key]);
+}
